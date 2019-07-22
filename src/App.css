@@ -1,33 +1,411 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
+.jumbotron {
   min-height: 100vh;
+  /* background-image: url('./images/HeroImage.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.jumbotron h2 {
+  font-size: 6vmin;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron .button {
+  font-size: 6vmin;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  min-height: 4em;
+}
+
+#rbnav {
+  border-bottom: 0.1em solid rgba(255, 159, 28, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: whitesmoke;
+}
+
+.navbar-toggler-icon {
+  padding: 0;
+}
+
+#RB {
+  font-family: 'Patrick Hand', cursive;
+  border-style: solid;
+  border-width: 0.07em;
+  padding: 0.25em;
+  line-height: 1;
+}
+
+#fullname {
+  color: rgba(255, 159, 28, 1);
+}
+
+#viewmyworkbutton {
+  font-size: 3vmin;
+  border-width: 0.09em;
+}
+
+#aboutCard {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#aboutSection {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 93.5vh;
+  color: rgba(94, 94, 94, 1);
+  /* background-image: url('./images/whitePattern.jpg'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(200, 200, 200, 1);
+}
+
+#aboutHeader {
+  margin: 5vh;
+  margin-top: 17vh;
+  border-bottom: 0.13em solid black;
+  font-size: calc(16px + 3vmin);
+  color: black;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(36, 36, 36, 1);
+  color: rgba(94, 94, 94, 1);
+  padding-bottom: 8rem;
+}
+
+#projectsHead {
+  margin: 6vh;
+  margin-top: 14vh;
+  border-bottom: 0.13em solid rgba(255, 159, 28, 1);
+  color: rgba(255, 159, 28, 1);
+}
+
+.projCard {
+  border: 0.1em solid rgba(94, 94, 94, 1);
+}
+
+#architecture {
+  margin: 2em;
+}
+
+.h1,
+h1 {
+  font-size: calc(16px + 3vmin);
+}
+
+#photoRow {
+  flex-direction: column;
+  align-items: center;
+}
+
+#rbcard {
+  border: 0.032em solid rgba(255, 159, 28, 0.4);
+}
+
+#rbcard p {
+  font-size: calc(2vw + 6px);
+}
+
+#rbcard h4 {
+  font-size: calc(2vw + 8px);
+}
+
+.card-img-top.frontImage {
+  object-fit: cover;
+  object-position: center;
+  height: 40vmin;
+}
+
+.card-img-top.backImage {
+  object-fit: cover;
+  object-position: top;
+  height: 30vmin;
+}
+
+.card-footer {
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  padding-top: 1rem;
+  padding-right: 0rem;
+  background-color: none !important;
+}
+
+.custom-footer {
+  background-color: none !important;
+  border-top: 0.05rem solid rgba(152, 152, 152, 0.5);
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  padding-top: 1rem;
+  padding-right: 0rem;
+}
+
+.card-body {
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+.close span {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.githubButton {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 0;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.githubButton p {
+  margin-bottom: 0;
+  font-size: calc(0.5vw + 10px);
 }
 
-.App-link {
-  color: #61dafb;
+.card-footer .btn-outline-secondary {
+  margin-bottom: 0;
+  font-size: calc(0.5vw + 10px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.back ul {
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
+}
+
+#contact {
+  background-color: rgba(200, 200, 200, 1);
+}
+
+#footerLinks {
+  font-size: 4rem;
+  background-color: black;
+  height: 11vh;
+}
+
+.social .list-inline-item {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#contactHeader {
+  border-bottom: 0.06em solid black;
+  margin-bottom: 3.5rem;
+}
+
+#contactform {
+  width: 25vw;
+  min-width: 18rem;
+}
+
+.downArrow .btn-outline-light {
+  font-size: calc(16px + 3vmin);
+  color: rgba(94, 94, 94, 1);
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.downArrow2 .btn-outline-light {
+  font-size: calc(16px + 3vmin);
+  color: rgba(94, 94, 94, 1);
+  border: none;
+  margin-top: 1rem;
+}
+
+div .btn {
+  font-size: calc(0.5vw + 8px);
+  margin-bottom: 0;
+}
+
+#toTopArrow .btn-outline-light {
+  font-size: calc(16px + 3vmin);
+  color: rgba(94, 94, 94, 1);
+  border: none;
+}
+
+#toTopArrow {
+  margin-bottom: 0.5rem !important;
+  margin-top: 2.5rem;
+}
+
+/* min font size & scaling  */
+.front .card-text {
+  font-size: calc(2vw + 6px);
+  overflow-wrap: break-word;
+}
+
+/* min font size & scaling  */
+.back .card-text {
+  font-size: calc(1.5vw + 8px);
+  overflow-wrap: break-word;
+}
+
+/* ExplorARs text is too long for the medium-sm sizes need to scall it differently than the others */
+@media (max-width: 992px) {
+  .explorARbackText li {
+    font-size: calc(0.05vw + 13px);
   }
-  to {
-    transform: rotate(360deg);
+  #explorARul {
+    padding-inline-end: 0 !important;
+    padding-inline-start: 10px !important;
   }
+}
+
+/* behavior for xs+sm screens */
+@media (max-width: 576px) {
+  #rbcard {
+    border: none;
+  }
+  .back .card-img-top {
+    display: none;
+  }
+
+  .embed-responsive-item {
+    display: none;
+  }
+
+  .backVideo {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .back .card-text {
+    font-size: calc(1.5vw + 8px);
+    overflow-wrap: break-word;
+  }
+
+  #grungeBackText li {
+    font-size: calc(1.2vw + 8px);
+  }
+
+  #footerLinks {
+    font-size: 2.5rem;
+    height: 10vh;
+  }
+
+  .back ul {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+
+  .back li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* hiding the video link/title at non-mobile video sizes*/
+@media (min-width: 577px) {
+  #demoButton {
+    display: none;
+  }
+  .mobile-title {
+    display: none;
+  }
+}
+
+/* max font sizes for large+ screens */
+@media (min-width: 991px) {
+  #rbcard p {
+    font-size: 24px;
+  }
+  #rbcard h4 {
+    font-size: 28px;
+  }
+  .front .card-text {
+    font-size: 20px;
+  }
+  .front .card-title {
+    font-size: 26px;
+  }
+  .back .card-text {
+    font-size: 18px;
+  }
+
+  .back #grungeBackText {
+    font-size: 18px;
+  }
+
+  .githubButton p {
+    font-size: 16px;
+  }
+
+  .card-footer .btn-outline-secondary {
+    font-size: 16px;
+  }
+
+  #rbcard img {
+    min-height: 100%;
+  }
+}
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+  max-width: 100%;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: 'frontAndBack';
+  transform-style: preserve-3d;
+  transition: all 0.9s ease;
+  max-width: 100%;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+  max-width: 100%;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+  max-width: 100%;
+}
+
+.card-flip-manual {
+  transform: rotateY(180deg);
 }
