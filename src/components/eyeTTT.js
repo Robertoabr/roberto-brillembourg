@@ -1,20 +1,23 @@
-import React, {Component} from 'react'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+import React, { Component } from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import computerVision from '../images/computerVision.png';
+import eyeTTTscreen2 from '../images/EyeTTTscreen2.png';
 
 export default class EyeTTT extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       flipped: false
-    }
-    this.onClickFlipCard = this.onClickFlipCard.bind(this)
+    };
+
+    this.onClickFlipCard = this.onClickFlipCard.bind(this);
   }
 
   onClickFlipCard(id) {
-    let newState = {}
-    newState[id] = !this.state[id]
-    this.setState(newState)
+    let newState = {};
+    newState[id] = !this.state[id];
+    this.setState(newState);
   }
 
   render() {
@@ -30,7 +33,7 @@ export default class EyeTTT extends Component {
               <Card.Img
                 className="frontImage"
                 variant="top"
-                src="images/computerVision.png"
+                src={computerVision}
               />
               <Card.Body className="rbflipbody">
                 <Card.Title>EyeTicTacToe</Card.Title>
@@ -52,8 +55,8 @@ export default class EyeTTT extends Component {
               <Card.Img
                 className="backImage"
                 variant="top"
-                src="images/eyeTTTscreen2.png"
-                style={{borderBottom: '.05rem solid rgba(94, 94, 94, .2)'}}
+                src={eyeTTTscreen2}
+                style={{ borderBottom: '.05rem solid rgba(94, 94, 94, .2)' }}
               />
               <Card.Body className="rbflipbody">
                 <div className="d-flex flex-row justify-content-center">
@@ -105,6 +108,6 @@ export default class EyeTTT extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

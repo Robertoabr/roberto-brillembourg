@@ -8,6 +8,7 @@ body {
 
 .jumbotron {
   min-height: 100vh;
+  background-image: url(./images/HeroImage.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,6 +80,7 @@ body {
   align-items: center;
   min-height: 93.5vh;
   color: rgba(94, 94, 94, 1);
+  background-image: url(./images/whitePattern.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

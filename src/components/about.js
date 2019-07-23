@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import roberto2 from '../images/roberto2.png';
 
 const About = () => {
   return (
@@ -12,7 +13,6 @@ const About = () => {
         fluid
         id="aboutSection"
         className="d-flex flex-column align-items-center"
-        style={{ backgroundImage: "url('./images/whitePattern.jpg')" }}
       >
         <div>
           <h1 id="aboutHeader" className="m-8">
@@ -24,7 +24,7 @@ const About = () => {
             <div className="row no-gutters">
               <div className="col-lg-4">
                 <img
-                  src="images/roberto2.png"
+                  src={roberto2}
                   alt=""
                   className="card-img"
                   style={{

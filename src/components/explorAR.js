@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import ARtajmahal from '../images/ARtajmahal.jpg';
 
 export default class ExplorAR extends Component {
   constructor(props) {
@@ -30,11 +31,7 @@ export default class ExplorAR extends Component {
         >
           <div className="front">
             <Card className="projCard">
-              <Card.Img
-                className="frontImage"
-                variant="top"
-                src="images/ARtajmahal.jpg"
-              />
+              <Card.Img className="frontImage" variant="top" src={ARtajmahal} />
               <Card.Body className="rbflipbody">
                 <Card.Title>ExplorAR</Card.Title>
                 <Card.Text>

@@ -1,20 +1,22 @@
-import React, {Component} from 'react'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+import React, { Component } from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import earth2 from '../images/earth2.png';
+import farFromHomeAnim from '../images/farFromHomeAnim.gif';
 
 export default class FarFromHome extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       flipped: false
-    }
-    this.onClickFlipCard = this.onClickFlipCard.bind(this)
+    };
+    this.onClickFlipCard = this.onClickFlipCard.bind(this);
   }
 
   onClickFlipCard(id) {
-    let newState = {}
-    newState[id] = !this.state[id]
-    this.setState(newState)
+    let newState = {};
+    newState[id] = !this.state[id];
+    this.setState(newState);
   }
 
   render() {
@@ -27,11 +29,7 @@ export default class FarFromHome extends Component {
         >
           <div className="front">
             <Card className="projCard">
-              <Card.Img
-                className="frontImage"
-                variant="top"
-                src="images/earth2.png"
-              />
+              <Card.Img className="frontImage" variant="top" src={earth2} />
               <Card.Body className="rbflipbody">
                 <Card.Title>Far From Home</Card.Title>
                 <Card.Text>
@@ -52,7 +50,7 @@ export default class FarFromHome extends Component {
               <Card.Img
                 className="backImage"
                 variant="top"
-                src="images/farFromHomeAnim.gif"
+                src={farFromHomeAnim}
               />
               <Card.Body className="rbflipbody">
                 <div className="d-flex flex-row justify-content-center">
@@ -79,7 +77,7 @@ export default class FarFromHome extends Component {
                 </div>
                 <Card.Footer
                   className="d-flex flex-row justify-content-between"
-                  style={{backgroundColor: 'none'}}
+                  style={{ backgroundColor: 'none' }}
                   bsPrefix="custom-footer"
                 >
                   <div className="d-flex flex-row">
@@ -115,6 +113,6 @@ export default class FarFromHome extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

@@ -5,10 +5,7 @@ import Button from 'react-bootstrap/Button';
 const Jumbo = () => {
   return (
     <section id="top">
-      <Jumbotron
-        fluid
-        style={{ backgroundImage: "url('./images/HeroImage.jpg')" }}
-      >
+      <Jumbotron fluid>
         <div className="intro">
           <h2>
             Hello, I'm <span id="fullname">Roberto Brillembourg</span>.

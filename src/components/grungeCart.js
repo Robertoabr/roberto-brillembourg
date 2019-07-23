@@ -1,20 +1,22 @@
-import React, {Component} from 'react'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+import React, { Component } from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import guitar from '../images/guitar.jpg';
+import grungeCart1 from '../images/GrungeCart1.png';
 
 export default class GrungeCart extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       flipped: false
-    }
-    this.onClickFlipCard = this.onClickFlipCard.bind(this)
+    };
+    this.onClickFlipCard = this.onClickFlipCard.bind(this);
   }
 
   onClickFlipCard(id) {
-    let newState = {}
-    newState[id] = !this.state[id]
-    this.setState(newState)
+    let newState = {};
+    newState[id] = !this.state[id];
+    this.setState(newState);
   }
 
   render() {
@@ -27,11 +29,7 @@ export default class GrungeCart extends Component {
         >
           <div className="front">
             <Card className="projCard">
-              <Card.Img
-                className="frontImage"
-                variant="top"
-                src="images/Guitar.jpg"
-              />
+              <Card.Img className="frontImage" variant="top" src={guitar} />
               <Card.Body className="rbflipbody">
                 <Card.Title>GrungeCart</Card.Title>
                 <Card.Text>
@@ -49,11 +47,7 @@ export default class GrungeCart extends Component {
           </div>
           <div className="back">
             <Card className="projCard">
-              <Card.Img
-                className="backImage"
-                variant="top"
-                src="images/grungeCart1.png"
-              />
+              <Card.Img className="backImage" variant="top" src={grungeCart1} />
               <Card.Body className="rbflipbody">
                 <div className="d-flex flex-row justify-content-center">
                   <Card.Title className="mobile-title">GrungeCart</Card.Title>
@@ -113,6 +107,6 @@ export default class GrungeCart extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
