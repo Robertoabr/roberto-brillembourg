@@ -7,6 +7,7 @@ body {
 }
 
 .jumbotron {
+  background-color: black !important;
   min-height: 100vh;
   background-image: url(./images/HeroImage.jpg);
   background-size: cover;
@@ -84,7 +85,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: rgba(200, 200, 200, 1);
+  /* background-color: rgba(200, 200, 200, 1); */
 }
 
 #aboutHeader {
