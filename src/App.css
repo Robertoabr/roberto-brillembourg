@@ -9,7 +9,7 @@ body {
 .jumbotron {
   background-color: black !important;
   min-height: 100vh;
-  background-image: url(./images/HeroImage.jpg);
+  /* background-image: url(./images/HeroImage.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
