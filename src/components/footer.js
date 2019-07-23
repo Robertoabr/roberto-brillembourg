@@ -69,6 +69,11 @@ const Footer = () => {
                 Submit
               </Button>
             </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://robertoabr.github.io/roberto-brillembourg/"
+            />
           </Form>
         </Container>
       </div>
