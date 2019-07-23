@@ -12,6 +12,7 @@ const About = () => {
         fluid
         id="aboutSection"
         className="d-flex flex-column align-items-center"
+        style={{ backgroundImage: "url('./images/whitePattern.jpg')" }}
       >
         <div>
           <h1 id="aboutHeader" className="m-8">

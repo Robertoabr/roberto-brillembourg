@@ -1,11 +1,14 @@
-import React from 'react'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Button from 'react-bootstrap/Button'
+import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button';
 
 const Jumbo = () => {
   return (
     <section id="top">
-      <Jumbotron fluid>
+      <Jumbotron
+        fluid
+        style={{ backgroundImage: "url('./images/HeroImage.jpg')" }}
+      >
         <div className="intro">
           <h2>
             Hello, I'm <span id="fullname">Roberto Brillembourg</span>.
@@ -22,7 +25,7 @@ const Jumbo = () => {
         </div>
       </Jumbotron>
     </section>
-  )
-}
+  );
+};
 
-export default Jumbo
+export default Jumbo;
