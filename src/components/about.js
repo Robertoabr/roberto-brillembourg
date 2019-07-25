@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import roberto2 from '../images/roberto2.png';
+import roberto2 from '../images/roberto2.jpg';
 
 const About = () => {
   return (

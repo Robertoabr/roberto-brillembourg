@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import earth2 from '../images/earth2.png';
+import earth2 from '../images/earth2.jpg';
 import farFromHomeAnim from '../images/farFromHomeAnim.gif';
 
 export default class FarFromHome extends Component {

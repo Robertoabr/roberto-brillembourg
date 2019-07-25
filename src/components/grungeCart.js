@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import guitar from '../images/guitar.jpg';
-import grungeCart1 from '../images/GrungeCart1.png';
+import grungeCart1 from '../images/GrungeCart1.jpg';
 
 export default class GrungeCart extends Component {
   constructor(props) {
