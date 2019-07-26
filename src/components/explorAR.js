@@ -96,7 +96,7 @@ export default class ExplorAR extends Component {
                     </Button>
                     <Button
                       variant="outline-secondary"
-                      href="https://youtu.be/iLDaRyiGrh8?start=98?enablejsapi=1"
+                      href="https://www.youtube.com/embed/iLDaRyiGrh8?start=98"
                       target="_blank"
                       rel="noopener noreferrer"
                       id="demoButton"
