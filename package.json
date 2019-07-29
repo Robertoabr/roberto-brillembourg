@@ -1,7 +1,7 @@
 {
   "name": "rb-personal-website",
   "version": "0.1.0",
-  "homepage": "http://roberto-portfolio.s3-website-us-east-1.amazonaws.com",
+  "homepage": "http://robertobrillembourg.com.s3-website-us-east-1.amazonaws.com",
   "author": "Roberto Brillembourg",
   "license": "MIT",
   "private": true,
@@ -23,8 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deployGH": "gh-pages -d build",
-    "deployS3": "aws s3 sync build/ s3://roberto-portfolio"
+    "deployS3": "aws s3 sync build/ s3://robertobrillembourg.com"
   },
   "eslintConfig": {
     "extends": "react-app"
