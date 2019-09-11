@@ -15,7 +15,7 @@ const Jumbo = () => {
             className="mt-4"
             id="viewmyworkbutton"
             variant="outline-primary"
-            href="#about"
+            href="#projects"
           >
             View my work
           </Button>
